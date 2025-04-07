@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+html {
+    --s: 129px; /* control the size*/
+    --c1: #b9b9b9;
+    --c2: #dcdcdc;
+    --c3: #fafafa;
+    
+    background:
+      conic-gradient(from 75deg,var(--c1)   15deg ,var(--c2) 0 30deg ,#0000 0 180deg,
+                                var(--c2) 0 195deg,var(--c1) 0 210deg,#0000 0) 
+         calc(var(--s)/2) calc(.5*var(--s)/tan(30deg)),
+      conic-gradient(var(--c1)   30deg ,var(--c3) 0 75deg ,var(--c1) 0 90deg, var(--c2) 0 105deg,
+                     var(--c3) 0 150deg,var(--c2) 0 180deg,var(--c3) 0 210deg,var(--c1) 0 256deg,
+                     var(--c2) 0 270deg,var(--c1) 0 286deg,var(--c2) 0 331deg,var(--c3) 0);
+    background-size: var(--s) calc(var(--s)/tan(30deg));
+    font-family: "Lexend Deca", sans-serif;
+  }
+  
+  .main{
+    display: flex;
+  }
+
+  .lateral-direita{
+    width: 25%;
+    color: transparent;
+  }
+  .lateral-esquerda{
+    width: 25%;
+    color: transparent;
+  }
+  .corpo-form{
+    width: 50%;
+    padding-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  fieldset{
+    border: none;
+  }
+
+  input{
+    border-radius: 5px;
+  }
+
+  textarea{
+    border-radius: 5px;
+    min-width: 40%;
+    min-height: 30%;
+  }
+
+  input[type="file"] {
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  button{
+    font-family: "Lexend Deca", sans-serif;
+    height: 40px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
